@@ -1,0 +1,20 @@
+name: build-guard
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      # Real guard: the TypeScript must compile against the installed
+      # llama.rn + expo typings. Fails CI if any API usage drifts.
+      - run: npx tsc --noEmit

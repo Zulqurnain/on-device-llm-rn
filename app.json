@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "On-Device LLM RN",
+    "slug": "on-device-llm-rn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "scheme": "ondevicellmrn",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.zulqurnain.ondevicellmrn"
+    },
+    "android": {
+      "package": "com.zulqurnain.ondevicellmrn",
+      "permissions": ["INTERNET"]
+    },
+    "plugins": [
+      "expo-status-bar",
+      [
+        "llama.rn",
+        {
+          "enableEntitlements": true,
+          "forceCxx20": true,
+          "enableOpenCL": true
+        }
+      ]
+    ]
+  }
+}
