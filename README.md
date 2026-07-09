@@ -56,7 +56,7 @@ First launch downloads the chosen ~400 MB–2 GB GGUF. After that, toggle airpla
 and tap **Generate** — it still answers.
 
 > Requires React Native **New Architecture** (enabled by default in Expo 54 / RN 0.81).
-> `llama.rn@0.12.13` needs it. For GPU offload on Android, `n_gpu_layers: 99` is set in
+> `llama.rn@0.12.5` needs it. For GPU offload on Android, `n_gpu_layers: 99` is set in
 > [`src/llm/OnDeviceLLM.ts`](./src/llm/OnDeviceLLM.ts); the runtime falls back to CPU
 > transparently on devices without an OpenCL/Hexagon-capable GPU.
 
@@ -68,6 +68,8 @@ src/llm/OnDeviceLLM.ts       The asset: load + stream-completion wrapper over ll
 src/llm/models.ts            Curated edge-ready GGUF list (verified download URLs)
 src/hooks/useOnDeviceLLM.ts  Download-once + load + generate lifecycle
 ARCHITECTURE.md              Tie-back to the private-LLM-on-mobile brief
+LOOM_SCRIPT.md               6-min walkthrough script (timed talking points + demo beats)
+COMMUNITY_SEED.md            Copy + target shortlist for seeding to RN/Expo/local-LLM communities
 ```
 
 ## Beyond the demo (production patterns)

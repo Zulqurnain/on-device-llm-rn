@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { File, Paths } from 'expo-file-system'
+import { Directory, File, Paths } from 'expo-file-system'
 import { DEFAULT_MODEL, MODELS } from '../llm/models'
 import { InferenceMetrics, ModelSpec, OnDeviceLLM } from '../llm/OnDeviceLLM'
 
@@ -41,8 +41,10 @@ export function useOnDeviceLLM() {
       setPhase('downloading')
       setDownloading(true)
       // expo-file-system v19: the destination directory must exist first.
-      const modelsDir = new File(Paths.document, 'models')
-      if (!modelsDir.exists) await modelsDir.create()
+      // NOTE: must be a Directory (not a File), or `.create()` makes a file
+      // named "models" and the subsequent download fails.
+      const modelsDir = new Directory(Paths.document, 'models')
+      if (!modelsDir.exists) await modelsDir.create({ idempotent: true })
       await File.downloadFileAsync(spec.url, modelsDir)
       setDownloading(false)
       setDownloaded(true)
