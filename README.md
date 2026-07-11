@@ -84,4 +84,4 @@ The brief covers the harder parts this demo deliberately leaves out, including:
 
 Built by **Zulqurnain Haider** — Senior Mobile Engineer / Gen AI Engineer.
 If your team is evaluating edge-AI on mobile, I'm happy to walk through this in a technical read-through.
-• zulqurnainjj@gmail.com • https://zulqurnainj.com
+• zulqurnainjj@gmail.com • +923364116933 • https://zulqurnainj.com • https://linkedin.com/in/zulqurnainjj
