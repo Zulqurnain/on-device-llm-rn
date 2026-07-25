@@ -85,3 +85,13 @@ The brief covers the harder parts this demo deliberately leaves out, including:
 Built by **Zulqurnain Haider** — Senior Mobile Engineer / Gen AI Engineer.
 If your team is evaluating edge-AI on mobile, I'm happy to walk through this in a technical read-through.
 • zulqurnainjj@gmail.com • +923364116933 • https://zulqurnainj.com • https://linkedin.com/in/zulqurnainjj
+
+---
+
+## Open to work (founder / eng-direct inbound)
+
+I'm actively exploring remote Senior AI + Mobile Engineer roles -- on-device LLM, RAG, React Native / Flutter. If your team is building AI features where data-localisation, offline use, or per-token serving cost matters, I'd love a technical read-through.
+
+- Proof repo (always-live hub): https://github.com/Zulqurnain/on-device-llm-rn
+- LinkedIn: https://linkedin.com/in/zulqurnainjj
+- Email: zulqurnainjj@gmail.com
